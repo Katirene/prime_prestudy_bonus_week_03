@@ -38,11 +38,11 @@ function getData() {
         url: '/people',
         success: function(data) {
             for(var i=0; i < data.length; i++){
-                $('.peoplecontainer').append('<span><p>' +'  '+ data[i].name +'  '+ '</p></span>');
+                $('.peoplecontainer').append('<div><p>' +'  '+ data[i].name +'  '+ '</p>');
                 $('.peoplecontainer').append('<p>' +'  '+ data[i].address +'  '+ '</p>');
                 $('.peoplecontainer').append('<p>' +'  '+ data[i].city +'  '+ '</p>');
                 $('.peoplecontainer').append('<p>' +'  '+ data[i].state +'  '+ '</p>');
-                $('.peoplecontainer').append('<p>' +'  '+ data[i].zip_code +'  '+ '</p>');
+                $('.peoplecontainer').append('<p>' +'  '+ data[i].zip_code +'  '+ '</p></div>');
                 }
             console.log(data.name);
         }
